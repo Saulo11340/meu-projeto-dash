@@ -5,7 +5,6 @@
 
 
 # Instalação das bibliotecas necessárias
-get_ipython().system('pip install pandas plotly dash joblib numpy scipy --quiet')
 
 # Importar bibliotecas necessárias
 import pandas as pd
