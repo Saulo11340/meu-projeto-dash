@@ -3,9 +3,6 @@
 
 # In[1]:
 
-
-# Instalação das bibliotecas necessárias
-
 # Importar bibliotecas necessárias
 import pandas as pd
 import plotly.graph_objects as go
@@ -15,7 +12,7 @@ import numpy as np
 from scipy.optimize import minimize
 
 # Carregar o modelo treinado e os dados normalizados
-model = joblib.load('saved_model3.pkl')
+model = joblib.load('saved_model3.xgb')
 df = pd.read_csv('Processed_Normalized_Data.csv')
 
 # Obter a ordem correta das colunas do modelo
