@@ -16,6 +16,10 @@ model_path = 'saved_model3.xgb'
 data_path = 'Processed_Normalized_Data.csv'
 allocation_path = 'best_allocation1000.csv'
 
+# Certifique-se de que os arquivos estão no diretório correto
+if not os.path.exists(model_path) or not os.path.exists(data_path) or not os.path.exists(allocation_path):
+    raise FileNotFoundError("One or more required files are missing. Please check the paths.")
+
 model = joblib.load(model_path)
 df = pd.read_csv(data_path)
 
