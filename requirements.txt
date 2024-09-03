@@ -34,3 +34,5 @@ urllib3==2.2.2
 certifi==2024.7.4
 idna==3.8
 charset-normalizer==3.3.2
+flask_compress
+gunicorn
