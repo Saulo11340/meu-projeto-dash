@@ -51,7 +51,8 @@ def is_close_to_zero(value, tol=0.001):
 
 # Inicializar o aplicativo Dash
 app = Dash(__name__)
-Compress(app)
+compress = Compress()
+compress.init_app(app.server)  # Aplicar o Flask-Compress ao servidor Flask subjacente
 
 # Estilos globais para a aplicação
 global_styles = {
